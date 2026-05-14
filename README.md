@@ -72,25 +72,26 @@ The GitHub docs walk you through the full process with step-by-step instructions
 **Part A — Repository Rulesets**
 📄 [About rulesets](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets)
 
-1. Navigate to a repository → **Settings** → **Rules** → **Rulesets**
-2. Create a new ruleset and explore the options:
+1. Review the About Rulesets docs above.
+2. Navigate to a repository → **Settings** → **Rules** → **Rulesets**
+3. Create a new ruleset and explore the options:
    - Restrict who can push to a branch
    - Require pull request reviews before merging
    - Require status checks to pass
    - Block force pushes
-3. Consider: *Which of these rules would improve how your team ships code today?*
-4. Note: You can use the evaluate 
+4. Consider: *Which of these rules would improve how your team ships code today?*
 
 **Part B — CODEOWNERS**
 📄 [About code owners](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners)
 
-1. Navigate to (or create) a `CODEOWNERS` file in the root, `docs/`, or `.github/` folder of a repo
-2. Add a pattern to assign ownership, for example:
+1. Review the About code owners doc above.
+2. Navigate to (or create) a `CODEOWNERS` file in the root, `docs/`, or `.github/` folder of a repo
+3. Add a pattern to assign ownership, for example:
    ```
    # All .js files owned by the frontend team
    *.js   @your-org/frontend-team
    ```
-3. Consider: *Which directories or critical files in your existing projects should have designated owners? Who should be auto-requested for review?*
+4. Consider: *Which directories or critical files in your existing projects should have designated owners? Who should be auto-requested for review?*
 
 ---
 
