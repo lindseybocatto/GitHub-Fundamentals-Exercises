@@ -1,1 +1,161 @@
-# GitHub-Fundamentals-Exercises
+# 🗺️ GitHub Basics: Choose Your Own Adventure Exercises
+
+Welcome! After today's session, pick the adventures that match where you want to grow. Each one builds real, practical skills you can apply to your projects right away.
+
+---
+
+## ⚔️ Adventure 1: Introduction to GitHub
+
+> **Start here if you're new to GitHub — or want a solid refresher.**
+
+### Requirements
+- A free GitHub account ([sign up at github.com](https://github.com))
+
+### Your Path
+
+**Part A — Microsoft Learn: Introduction to GitHub**
+📖 [learn.microsoft.com — Introduction to GitHub](https://learn.microsoft.com/en-us/training/modules/introduction-to-github/1-introduction)
+
+Work through this guided reading module. It covers the core concepts:
+- What GitHub is and how it fits into your workflow
+- Repositories, branches, commits, and pull requests
+- The GitHub Flow
+
+> At the end of the module, it links directly to the GitHub Skills hands-on exercise. Follow it!
+
+**Part B — GitHub Skills: Introduction to GitHub**
+🛠️ [github.com/skills/introduction-to-github](https://github.com/skills/introduction-to-github)
+
+A browser-based, hands-on exercise. You'll practice:
+1. Creating a branch
+2. Committing a file
+3. Opening a pull request
+4. Merging your changes
+
+No local tools required — everything happens in the browser.
+
+---
+
+## 🔑 Adventure 2: Configure SSH for GitHub
+
+> **Set up secure, passwordless authentication to GitHub from your local machine.**
+
+### Requirements
+- A GitHub account
+- Git installed locally
+- A terminal (Terminal on Mac/Linux · Git Bash or WSL on Windows)
+
+### Your Path
+
+The GitHub docs walk you through the full process with step-by-step instructions. Use the **platform toggle** at the top of each page to switch between Mac, Windows, and Linux instructions.
+
+1. **Generate a new SSH key & add it to the SSH agent**
+   📄 [docs.github.com — Generating a new SSH key and adding it to the ssh-agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+
+2. **Add your public key to your GitHub account**
+   📄 [docs.github.com — Adding a new SSH key to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
+
+3. **Test your connection** — the docs include a verification step to confirm everything is working.
+
+---
+
+## 🛡️ Adventure 3: Explore Repo Rulesets & CODEOWNERS
+
+> **Discover how to govern your repositories and automate code ownership.**
+
+### Requirements
+- A GitHub account
+- Admin access to at least one repository (either create one, or access one you already have access to)
+
+### Your Path
+
+**Part A — Repository Rulesets**
+📄 [About rulesets](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets)
+
+1. Navigate to a repository → **Settings** → **Rules** → **Rulesets**
+2. Create a new ruleset and explore the options:
+   - Restrict who can push to a branch
+   - Require pull request reviews before merging
+   - Require status checks to pass
+   - Block force pushes
+3. Consider: *Which of these rules would improve how your team ships code today?*
+4. Note: You can use the evaluate 
+
+**Part B — CODEOWNERS**
+📄 [About code owners](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners)
+
+1. Navigate to (or create) a `CODEOWNERS` file in the root, `docs/`, or `.github/` folder of a repo
+2. Add a pattern to assign ownership, for example:
+   ```
+   # All .js files owned by the frontend team
+   *.js   @your-org/frontend-team
+   ```
+3. Consider: *Which directories or critical files in your existing projects should have designated owners? Who should be auto-requested for review?*
+
+---
+
+## 🤖 Adventure 4: Build with GitHub Copilot (Coding Agent)
+
+> **Let Copilot scaffold, build, review, and iterate on a real project — from scratch.**
+
+### Requirements
+- A GitHub account with **GitHub Copilot** assigned 
+- Copilot coding agent enabled: **github.com → Settings → Copilot → "Coding agent" → Enabled**
+
+---
+
+### Step 1 — Create a new repo & prompt Copilot at creation
+
+1. Go to [github.com](https://github.com) → **New repository**
+2. Give it a name (e.g., `calculator-pages`) and set it to **Public**
+3. At repo creation, locate the **"Start coding with Copilot"** prompt and enter:
+
+   > *Create a simple calculator app that can be deployed via GitHub Pages. Create a README describing the app and giving me the steps necessary to deploy to GitHub Pages.*
+
+4. Click **Create repository** — Copilot's coding agent will begin working.
+
+---
+
+### Step 2 — Explore the Agents tab
+
+5. Navigate to the **Copilot** tab in your repository (or watch the agent's activity in the Issues view)
+6. Observe in real time:
+   - What files Copilot is creating
+   - What decisions and tool calls it's making
+   - The agent's progress log
+
+---
+
+### Step 3 — Review the Pull Request Copilot Opens
+
+7. When the agent finishes, it opens a **Pull Request** with all generated code
+8. Review the diff — examine the HTML, CSS, JavaScript, and README
+9. Ask yourself: *Does the README give clear deployment steps? Does the code look correct?*
+
+---
+
+### Step 4 — Add Copilot Code Review
+
+10. Inside the PR, click **"Request a review"** and select **Copilot** as the reviewer
+11. Copilot will analyze the code and post inline comments with suggestions
+12. Review its feedback, address any issues, then **Merge the PR**
+
+---
+
+### Step 5 — Start a new Copilot coding agent session for a tweak
+
+13. Open the **Copilot** tab (or create a new Issue) and start a new coding agent session
+14. Give Copilot a follow-up prompt, for example:
+
+    > *Add a dark mode toggle to the calculator app.*
+
+15. Watch Copilot create a new branch and open a new PR with the changes
+16. Repeat the review and merge cycle
+
+---
+
+> 💡 **Tip:** GitHub Pages deployment happens automatically if your repo is set to serve from the `main` branch. Check **Settings → Pages** after merging to see your live URL.
+
+---
+
+*Happy adventuring! 🚀*
