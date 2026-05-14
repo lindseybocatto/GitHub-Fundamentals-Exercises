@@ -8,9 +8,6 @@ Welcome! After today's session, pick the adventures that match where you want to
 
 > **Start here if you're new to GitHub — or want a solid refresher.**
 
-### Requirements
-- A free GitHub account ([sign up at github.com](https://github.com))
-
 ### Your Path
 
 **Part A — Microsoft Learn: Introduction to GitHub**
