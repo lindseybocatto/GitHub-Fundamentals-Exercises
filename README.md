@@ -119,7 +119,7 @@ The GitHub docs walk you through the full process with step-by-step instructions
 
 ### Step 2 — Explore the Agents tab
 
-5. Navigate to the **Copilot** tab in your repository (or watch the agent's activity in the Issues view)
+5. Navigate to the **Agents** tab in your repository (or watch the agent's activity in the Issues view)
 6. Observe in real time:
    - What files Copilot is creating
    - What decisions and tool calls it's making
@@ -130,28 +130,27 @@ The GitHub docs walk you through the full process with step-by-step instructions
 ### Step 3 — Review the Pull Request Copilot Opens
 
 7. When the agent finishes, it opens a **Pull Request** with all generated code
-8. Review the diff — examine the HTML, CSS, JavaScript, and README
-9. Ask yourself: *Does the README give clear deployment steps? Does the code look correct?*
+8. Review the diff — examine the files
 
 ---
 
 ### Step 4 — Add Copilot Code Review
 
-10. Inside the PR, click **"Request a review"** and select **Copilot** as the reviewer
-11. Copilot will analyze the code and post inline comments with suggestions
-12. Review its feedback, address any issues, then **Merge the PR**
+9. Inside the PR, click **"Request a review"** and select **Copilot** as the reviewer
+10. Copilot will analyze the code and post inline comments with suggestions
+11. Review its feedback, address any issues, then **Merge the PR**
 
 ---
 
 ### Step 5 — Start a new Copilot coding agent session for a tweak
 
-13. Open the **Copilot** tab (or create a new Issue) and start a new coding agent session
-14. Give Copilot a follow-up prompt, for example:
+12. Open the **Agents** tab (or create a new Issue and assign Copilot) and start a new coding agent session
+13. Give Copilot a follow-up prompt, for example:
 
     > *Add a dark mode toggle to the calculator app.*
 
-15. Watch Copilot create a new branch and open a new PR with the changes
-16. Repeat the review and merge cycle
+14. Watch Copilot create a new branch and open a new PR with the changes
+15. Repeat the review and merge cycle
 
 ---
 
