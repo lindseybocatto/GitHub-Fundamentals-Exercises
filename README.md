@@ -95,20 +95,20 @@ The GitHub docs walk you through the full process with step-by-step instructions
 
 ---
 
-## 🤖 Adventure 4: Build with GitHub Copilot (Coding Agent)
+## 🤖 Adventure 4: Build with GitHub Copilot (Cloud Agent, Code Review Agent)
 
 > **Let Copilot scaffold, build, review, and iterate on a real project — from scratch.**
 
 ### Requirements
 - A GitHub account with **GitHub Copilot** assigned 
-- Copilot coding agent enabled: **github.com → Settings → Copilot → "Coding agent" → Enabled**
+- Copilot coding agent & code review agent enabled (these should be enabled automatically, but if not, contact your administrator)
 
 ---
 
 ### Step 1 — Create a new repo & prompt Copilot at creation
 
 1. Go to [github.com](https://github.com) → **New repository**
-2. Give it a name (e.g., `calculator-pages`) and set it to **Public**
+2. Give it a name (e.g., `calculator-pages`)
 3. At repo creation, locate the **"Start coding with Copilot"** prompt and enter:
 
    > *Create a simple calculator app that can be deployed via GitHub Pages. Create a README describing the app and giving me the steps necessary to deploy to GitHub Pages.*
@@ -155,7 +155,7 @@ The GitHub docs walk you through the full process with step-by-step instructions
 
 ---
 
-> 💡 **Tip:** GitHub Pages deployment happens automatically if your repo is set to serve from the `main` branch. Check **Settings → Pages** after merging to see your live URL.
+> 💡 **Tip:** You may need to edit the GitHub Pages settings to see your deployment go live. Copilot should include these instructions in the repo README.md if included in the prompt. You can access these settings by going to repo settings > Pages to access. If Copilot did not originally include the deployment instructions / settings changes, you can kick off another agent session to include these. 
 
 ---
 
